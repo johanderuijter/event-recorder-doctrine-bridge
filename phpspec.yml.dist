@@ -1,0 +1,4 @@
+suites:
+    EventRecorderDoctrineBridge:
+        namespace: JDR\EventRecorderDoctrineBridge
+        psr4_prefix: JDR\EventRecorderDoctrineBridge

@@ -1,0 +1,48 @@
+{
+    "name": "jdr/event-recorder-doctrine-bridge",
+    "type": "library",
+    "description": "Subscriber for doctrine to collect any recorded events",
+    "keywords": [
+        "jdr",
+        "event-recorder-doctrine-bridge"
+    ],
+    "homepage": "https://github.com/johanderuijter/event-recorder-doctrine-bridge",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johan de Ruijter",
+            "email": "dev@johanderuijter.nl",
+            "homepage": "http://johanderuijter.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.0",
+        "jdr/event-recorder": "@dev",
+        "doctrine/orm": "~2.5"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JDR\\EventRecorderDoctrineBridge\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\JDR\\EventRecorderDoctrineBridge\\": "spec"
+        }
+    },
+    "scripts": {
+        "test": "bin/phpspec run"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
